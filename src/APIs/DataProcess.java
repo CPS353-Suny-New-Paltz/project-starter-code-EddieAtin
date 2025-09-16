@@ -8,5 +8,5 @@ public interface DataProcess {
 	ReadInput input(ReadInput readInput);
 
 	//WritingOutput
-	WriteOutput sendData(ArrayList sendList);
+	WriteOutput sendData(ArrayList<Integer> sendList);
 }
