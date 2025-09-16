@@ -2,7 +2,6 @@ package APIs;
 import project.annotations.*;
 
 
-
 public class ProcessAPIProto{
 @ProcessAPIPrototype
 	public void PrototypeProcess(DataProcess process){
@@ -11,7 +10,7 @@ public class ProcessAPIProto{
 		
 		//After comparing new input with Data Storage, 
 		//check if it exists in the data bank
-		DataCheck dataCheck = readInput.compare();
+		DataCheck dataCheck = process.checker(new DataCheck());
 		
 		//Based off dataCheck, sendData from process will locate the list from
 		//the storage system. If it didn't exist in data bank, if will, sendData will

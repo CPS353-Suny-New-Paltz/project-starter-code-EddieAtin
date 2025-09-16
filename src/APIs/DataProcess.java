@@ -9,4 +9,7 @@ public interface DataProcess {
 
 	//WritingOutput
 	WriteOutput sendData(ArrayList<Integer> sendList);
+
+	DataCheck checker(DataCheck dataCheck);
+
 }
