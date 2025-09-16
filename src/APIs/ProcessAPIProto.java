@@ -1,7 +1,6 @@
 package APIs;
 import project.annotations.ProcessAPIPrototype;
 
-
 public class ProcessAPIProto{
 	@ProcessAPIPrototype
 	public void ProcessAPIP(DataProcess process){
