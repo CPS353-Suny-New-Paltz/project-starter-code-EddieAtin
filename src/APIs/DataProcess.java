@@ -1,5 +1,4 @@
 package APIs;
-import java.util.*;
 import project.annotations.ProcessAPI;
 
 @ProcessAPI
@@ -10,6 +9,7 @@ public interface DataProcess {
 	//WritingOutput
 	WriteOutput sendData(WriteOutput writeOutput);
 
+	//dataCheck
 	DataCheck checker(DataCheck dataCheck);
 
 }
