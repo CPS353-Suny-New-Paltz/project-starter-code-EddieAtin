@@ -8,7 +8,7 @@ public interface DataProcess {
 	ReadInput input(ReadInput readInput);
 
 	//WritingOutput
-	WriteOutput sendData(ArrayList<Integer> sendList);
+	WriteOutput sendData(WriteOutput writeOutput);
 
 	DataCheck checker(DataCheck dataCheck);
 

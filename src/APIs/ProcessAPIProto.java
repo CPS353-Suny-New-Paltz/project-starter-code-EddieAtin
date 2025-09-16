@@ -12,10 +12,10 @@ public class ProcessAPIProto{
 		//check if it exists in the data bank
 		DataCheck dataCheck = process.checker(new DataCheck());
 		
-		//Based off dataCheck, sendData from process will locate the list from
+		// sendData from process will locate the list from
 		//the storage system. If it didn't exist in data bank, if will, sendData will
 		//send a List with just the output.
-		WriteOutput writeOutput = process.sendData(dataCheck.sendList());
+		WriteOutput writeOutput = process.sendData(new WriteOutput());
 
 				
 	}
