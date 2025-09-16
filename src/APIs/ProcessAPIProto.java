@@ -4,7 +4,7 @@ import project.annotations.ProcessAPIPrototype;
 
 public class ProcessAPIProto{
 @ProcessAPIPrototype
-	public void PrototypeProcess(DataProcess process){
+	public void ProcessAPIProto(DataProcess process){
 		// take in the input
 		ReadInput readInput = process.input(new ReadInput());
 		
