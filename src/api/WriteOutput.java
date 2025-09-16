@@ -1,4 +1,4 @@
-package APIs;
+package api;
 
 public class WriteOutput {
 	public WriteOutput() {

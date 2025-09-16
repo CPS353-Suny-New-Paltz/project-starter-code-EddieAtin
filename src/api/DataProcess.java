@@ -1,4 +1,4 @@
-package APIs;
+package api;
 import project.annotations.ProcessAPI;
 
 @ProcessAPI
