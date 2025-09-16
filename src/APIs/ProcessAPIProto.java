@@ -1,5 +1,5 @@
 package APIs;
-import project.annotations.*;
+import project.annotations.ProcessAPIPrototype;
 
 
 public class ProcessAPIProto{

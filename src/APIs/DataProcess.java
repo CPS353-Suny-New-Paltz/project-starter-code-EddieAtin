@@ -1,6 +1,6 @@
 package APIs;
 import java.util.*;
-import project.annotations.*;
+import project.annotations.ProcessAPI;
 
 @ProcessAPI
 public interface DataProcess {
