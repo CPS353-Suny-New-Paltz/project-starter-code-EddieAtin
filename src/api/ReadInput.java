@@ -1,8 +1,11 @@
 package api;
 
 public class ReadInput {
-	public ReadInput() {
-		//put readInput stuff
-	}
+		
+		public DataCheck compare() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
 
 }

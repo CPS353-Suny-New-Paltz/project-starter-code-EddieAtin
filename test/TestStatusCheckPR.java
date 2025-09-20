@@ -27,7 +27,7 @@ public class TestStatusCheckPR {
     private static final String APPROVED = "APPROVED";
     
    // @Test
-    //Prof. B said to do this. <3
+    //Prof. B said to do this. :)
     public void testPullRequest() throws Exception {
         String baseApiPath = getBaseApiPath();
         String toCurl = baseApiPath + "pulls?state=all";

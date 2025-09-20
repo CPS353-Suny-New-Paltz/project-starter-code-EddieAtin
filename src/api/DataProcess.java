@@ -1,15 +1,13 @@
 package api;
+import java.util.ArrayList;
+
 import project.annotations.ProcessAPI;
 
 @ProcessAPI
 public interface DataProcess {
-	//reading input
 	ReadInput input(ReadInput readInput);
 
 	//WritingOutput
-	WriteOutput sendData(WriteOutput writeOutput);
-
-	//dataCheck
-	DataCheck checker(DataCheck dataCheck);
+	WriteOutput sendData(ArrayList<Integer> sendList);
 
 }
