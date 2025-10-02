@@ -11,3 +11,4 @@ public interface DataProcess {
 	WriteOutput sendData(ArrayList<Integer> sendList);
 
 }
+
