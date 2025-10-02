@@ -2,11 +2,11 @@ package implementations;
 
 import java.util.ArrayList;
 
-import api.DataProcessAPI;
+import api.DataProcess;
 import api.ReadInput;
 import api.WriteOutput;
 
-public class DataProcessImpl implements DataProcessAPI{
+public class DataProcessImpl implements DataProcess{
 	public ReadInput input(ReadInput readInput) {
 		return null;
 	}

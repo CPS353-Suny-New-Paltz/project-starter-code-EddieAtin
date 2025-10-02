@@ -1,9 +1,9 @@
-package api;
+	package api;
 import project.annotations.ProcessAPIPrototype;
 
 public class ProcessAPIProto{
 	@ProcessAPIPrototype
-	public void processAPI(DataProcessAPI process){
+	public void processAPI(DataProcess process){
 		// take in the input
 		ReadInput readInput = process.input(new ReadInput());
 

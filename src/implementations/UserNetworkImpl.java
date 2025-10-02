@@ -2,9 +2,9 @@ package implementations;
 
 import api.InputVerified;
 import api.UserInput;
-import api.UserNetworkAPI;
+import api.UserNetwork;
 
-public class UserNetworkImpl implements UserNetworkAPI {
+public class UserNetworkImpl implements UserNetwork {
 	public UserInput request(UserInput userInput) {
 		return null;
 	}

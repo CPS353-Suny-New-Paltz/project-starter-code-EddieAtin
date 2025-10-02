@@ -3,7 +3,7 @@ package api;
 import project.annotations.NetworkAPI;
 
 @NetworkAPI
-public interface UserNetworkAPI {
+public interface UserNetwork {
 
 	UserInput request(UserInput userInput);
 
