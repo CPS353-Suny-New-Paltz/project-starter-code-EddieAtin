@@ -3,7 +3,7 @@ import project.annotations.ProcessAPIPrototype;
 
 public class ProcessAPIProto{
 	@ProcessAPIPrototype
-	public void processAPI(DataProcess process){
+	public void processAPI(DataProcessAPI process){
 		// take in the input
 		ReadInput readInput = process.input(new ReadInput());
 
