@@ -1,5 +1,4 @@
-package Tests;
-
+package tests;
 
 import api.InputVerified;
 import api.NetworkResponse;
@@ -16,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class UserNetworkTest {
 
 	@Test
-	public void inputVerifiedTest() {
+	public void inputVerifiedTest(){
 		UserNetwork api = Mockito.mock(UserNetworkImpl.class);
 
 		UserInput input = Mockito.mock(UserInput.class);
@@ -28,7 +27,7 @@ public class UserNetworkTest {
 	}
 
 	@Test
-	public void networkResponseTest() {
+	public void networkResponseTest(){
 		UserNetwork api = Mockito.mock(UserNetworkImpl.class);
 		UserInput input = Mockito.mock(UserInput.class);
 

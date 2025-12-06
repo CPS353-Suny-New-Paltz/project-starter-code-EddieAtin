@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import api.CalcWriteResponse;
 import api.CompRequest;

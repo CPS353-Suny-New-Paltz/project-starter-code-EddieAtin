@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import api.DataCheck;
 import api.ReadInput;
