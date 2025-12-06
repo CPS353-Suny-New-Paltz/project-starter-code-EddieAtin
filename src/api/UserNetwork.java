@@ -9,4 +9,7 @@ public interface UserNetwork {
 
 	InputVerified check(UserInput input);
 
+	NetworkResponse answer(InputVerified verify, UserInput input);
+	
+	
 }

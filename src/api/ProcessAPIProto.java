@@ -1,11 +1,13 @@
 package api;
+import java.util.ArrayList;
+
 import project.annotations.ProcessAPIPrototype;
 
 public class ProcessAPIProto{
 	@ProcessAPIPrototype
-	public void processAPI(DataProcess process){
+	public void processAPI(DataProcessAPI process){
 		// take in the input
-		ReadInput readInput = process.input(new ReadInput());
+		ReadInput readInput = process.input(new ArrayList<Integer>());
 
 		//After comparing new input with Data Storage, 
 		//check if it exists in the data bank

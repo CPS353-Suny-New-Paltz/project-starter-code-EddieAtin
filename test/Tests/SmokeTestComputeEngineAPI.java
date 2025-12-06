@@ -1,0 +1,41 @@
+package Tests;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+import api.CalcWriteResponse;
+import api.CompRequest;
+import api.CompResponse;
+import api.ComputerAPI;
+import implementations.ComputeEngineImpl;
+
+public class SmokeTestComputeEngineAPI {
+	
+	@Test
+	public void CompRequestTest() {
+		// create implementation
+		ComputerAPI compEngine = Mockito.mock(ComputeEngineImpl.class);
+		
+		//Create CalcReadRequest Object
+		CompRequest request  = Mockito.mock(CompRequest.class);
+		
+		CompResponse response = new CompResponse(request);
+		
+		assertNotNull(response, "Can Calculate");
+	}
+	
+	@Test
+	public void CalcResponseTest() {
+		// create implementation
+		ComputerAPI compEngine = Mockito.mock(ComputeEngineImpl.class);
+		CompRequest request  = Mockito.mock(CompRequest.class);
+		CompResponse response = Mockito.mock(CompResponse.class);
+		
+		CalcWriteResponse calculated = compEngine.write(response, request);
+		
+		assertNotNull(calculated,"big numbers");
+		
+	}
+}

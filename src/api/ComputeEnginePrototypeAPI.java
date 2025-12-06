@@ -6,10 +6,13 @@ public class ComputeEnginePrototypeAPI {
 	@ConceptualAPIPrototype 
 	public void computeEnginePrototype(ComputerAPI components) {
 		
-		// read/writer component requests Collatz sequence of input to be calculated
-		CalcRequest calcRequest = components.request(new CalcRequest());
+		// read component requests Collatz sequence of input to be calculated
+		CompRequest compRequest = components.request(new CompRequest());
 		
 		//Computing component will return back the output to the reader/writer component
-		CompResponse compResponse = components.response(new CompResponse());
+		CompResponse compResponse = components.response(compRequest);
+		
+		// write component response Collatz sequence calculated
+		CalcWriteResponse calcWriteResponse = components.write(compResponse, compRequest);
 	}
 }

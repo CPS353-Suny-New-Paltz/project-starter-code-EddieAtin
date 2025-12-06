@@ -2,16 +2,19 @@ package implementations;
 
 import java.util.ArrayList;
 
-import api.DataProcess;
+import api.DataProcessAPI;
 import api.ReadInput;
 import api.WriteOutput;
 
-public class DataProcessImpl implements DataProcess{
-	public ReadInput input(ReadInput readInput) {
+public class DataProcessImpl implements DataProcessAPI{
+	
+	@Override
+	public ReadInput input(ArrayList<Integer> sendList) {
 		return null;
 	}
 	
-	public WriteOutput sendData(ArrayList<Integer> sendList) {
+	@Override
+	public WriteOutput sendData(ArrayList<Integer> dataOut) {
 		return null;
 	}
 }
