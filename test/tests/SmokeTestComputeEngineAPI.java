@@ -35,7 +35,6 @@ public class SmokeTestComputeEngineAPI {
 
 		CalcWriteResponse calculated = compEngine.write(response, request);
 
-		assertNotNull(calculated,"big numbers");
-
+		assertNotNull(calculated, "big numbers");
 	}
 }
