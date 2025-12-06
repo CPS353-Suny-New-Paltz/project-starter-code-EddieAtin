@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class SmokeTestDataProcessAPI {
 
-	private static final ArrayList<Integer> NUM = (ArrayList<Integer>) Arrays.asList(1,10, 25);
+	private static final ArrayList<Integer> NUM = (ArrayList<Integer>) Arrays.asList(1,10,25);
 
 	@Test
 	public void readInputTest() {
