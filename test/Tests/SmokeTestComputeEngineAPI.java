@@ -1,13 +1,15 @@
 package Tests;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import api.CalcWriteResponse;
 import api.CompRequest;
 import api.CompResponse;
 import api.ComputerAPI;
 import implementations.ComputeEngineImpl;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class SmokeTestComputeEngineAPI {
 

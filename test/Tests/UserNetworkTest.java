@@ -1,13 +1,17 @@
 package Tests;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
+
 import api.InputVerified;
 import api.NetworkResponse;
 import api.UserInput;
 import api.UserNetwork;
 import implementations.UserNetworkImpl;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 public class UserNetworkTest {
 

@@ -1,14 +1,17 @@
 package Tests;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import java.util.ArrayList;
-import java.util.Arrays;
-import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import api.DataCheck;
 import api.ReadInput;
 import api.WriteOutput;
 import implementations.DataProcessImpl;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 public class SmokeTestDataProcessAPI {
 
