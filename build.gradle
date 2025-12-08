@@ -30,9 +30,14 @@ test {
     useJUnitPlatform()
     
     filter{
-		excludeTestsMatching "SmokeTestComputeEngineAPI.java"
-		excludeTestsMatching "SmokeTestDataProcessAPI.java"
-		excludeTestsMatching "UserNetworktest.java"
+		excludeTestsMatching "tests.SmokeTestComputeEngineAPI.compRequestTest"
+		excludeTestsMatching "tests.SmokeTestComputeEngineAPI.calcResponseTest"
+		
+		excludeTestsMatching "tests.SmokeTestDataProcessAPI.readInputTest"
+		excludeTestsMatching "tests.SmokeTestDataProcessAPI.writeDataTest"
+		
+		excludeTestsMatching "tests.UserNetworktest.inputVerifiedTest"
+		excludeTestsMatching "tests.UserNetworktest.networkResponseTest"
 		
 		setFailOnNoMatchingTests(false)
 	}
