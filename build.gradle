@@ -33,6 +33,8 @@ test {
 		excludeTestsMatching "SmokeTestComputeEngineAPI.java"
 		excludeTestsMatching "SmokeTestDataProcessAPI.java"
 		excludeTestsMatching "UserNetworktest.java"
+		
+		setFailOnNoMatchingTests(false)
 	}
 }
 
