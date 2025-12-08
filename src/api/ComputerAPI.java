@@ -5,8 +5,10 @@ import project.annotations.ConceptualAPI;
 @ConceptualAPI 
 public interface ComputerAPI {
 
-	CalcRequest request(CalcRequest calcRequest);
+	CompRequest request(CompRequest calcReadRequest);
 
-	CompResponse response(CompResponse compResponse);
+	CompResponse response(CompRequest request);
+
+	CalcWriteResponse write(CompResponse compResponse, CompRequest request);
 
 }

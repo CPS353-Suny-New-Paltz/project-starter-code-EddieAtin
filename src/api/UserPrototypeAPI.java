@@ -12,7 +12,7 @@ public class UserPrototypeAPI {
 		InputVerified verify = network.check(input);
 		
 		// After computation, the user receives the answer
-		NetworkResponse response = new NetworkResponse();
+		NetworkResponse response = network.answer(verify, input);
 		
 				
 	}
