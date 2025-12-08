@@ -36,8 +36,8 @@ test {
 		excludeTestsMatching "tests.SmokeTestDataProcessAPI.readInputTest"
 		excludeTestsMatching "tests.SmokeTestDataProcessAPI.writeDataTest"
 		
-		excludeTestsMatching "tests.UserNetworktest.inputVerifiedTest"
-		excludeTestsMatching "tests.UserNetworktest.networkResponseTest"
+		excludeTestsMatching "tests.UserNetworkTest.inputVerifiedTest"
+		excludeTestsMatching "tests.UserNetworkTest.networkResponseTest"
 		
 	}
 }
