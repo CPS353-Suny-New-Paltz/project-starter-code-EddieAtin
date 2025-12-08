@@ -16,7 +16,7 @@ public class SmokeTestComputeEngineAPI {
 	@Test
 	public void compRequestTest() {
 		// create implementation
-		ComputerAPI compEngine = Mockito.mock(ComputeEngineImpl.class);
+		ComputerAPI compEngine = new ComputeEngineImpl();
 
 		//Create CalcReadRequest Object
 		CompRequest request  = Mockito.mock(CompRequest.class);
@@ -29,7 +29,7 @@ public class SmokeTestComputeEngineAPI {
 	@Test
 	public void calcResponseTest() {
 		// create implementation
-		ComputerAPI compEngine = Mockito.mock(ComputeEngineImpl.class);
+		ComputerAPI compEngine = new ComputeEngineImpl();
 		CompRequest request  = Mockito.mock(CompRequest.class);
 		CompResponse response = Mockito.mock(CompResponse.class);
 

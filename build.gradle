@@ -39,7 +39,6 @@ test {
 		excludeTestsMatching "tests.UserNetworktest.inputVerifiedTest"
 		excludeTestsMatching "tests.UserNetworktest.networkResponseTest"
 		
-		setFailOnNoMatchingTests(false)
 	}
 }
 

@@ -16,7 +16,7 @@ public class UserNetworkTest {
 
 	@Test
 	public void inputVerifiedTest(){
-		UserNetwork api = Mockito.mock(UserNetworkImpl.class);
+		UserNetwork api = new UserNetworkImpl();
 
 		UserInput input = Mockito.mock(UserInput.class);
 
@@ -28,7 +28,7 @@ public class UserNetworkTest {
 
 	@Test
 	public void networkResponseTest(){
-		UserNetwork api = Mockito.mock(UserNetworkImpl.class);
+		UserNetwork api = new UserNetworkImpl();
 		UserInput input = Mockito.mock(UserInput.class);
 
 		InputVerified verified = Mockito.mock(InputVerified.class);

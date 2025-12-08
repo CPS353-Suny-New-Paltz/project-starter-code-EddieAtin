@@ -20,7 +20,7 @@ public class SmokeTestDataProcessAPI {
 
 	@Test
 	public void readInputTest() {
-		DataProcessImpl api = Mockito.mock(DataProcessImpl.class);
+		DataProcessImpl api = new DataProcessImpl();
 
 
 		// Takes in the file and integers
@@ -34,7 +34,7 @@ public class SmokeTestDataProcessAPI {
 
 	@Test
 	public void writeDataTest() {
-		DataProcessImpl api = Mockito.mock(DataProcessImpl.class);
+		DataProcessImpl api = new DataProcessImpl();
 		DataCheck dataCheck = Mockito.mock(DataCheck.class);
 
 		WriteOutput data = api.sendData(dataCheck.sendList());
