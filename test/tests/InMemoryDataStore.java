@@ -36,6 +36,4 @@ public class InMemoryDataStore implements DataStoreAPI{
 		        destination.addAll(output);
 		    }
 		}
-public class InMemoryDataStore {
-	
 }

@@ -11,9 +11,5 @@ public interface DataProcessAPI {
 
 	ReadResponse input(ReadRequest request);
 
-	ReadInput input(ArrayList<Integer> sendList);
-
-	WriteOutput sendData(ArrayList<Integer> dataOut);
-
 }
 
