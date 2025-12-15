@@ -10,6 +10,7 @@ public class ProcessAPIProto{
 		
 		ReadRequest readRequest = new ReadRequest();
 		ReadResponse readResponse = process.input(readRequest);
+		ReadInput readInput = process.input(new ArrayList<Integer>());
 
 		//After comparing new input with Data Storage, 
 		//check if it exists in the data bank
