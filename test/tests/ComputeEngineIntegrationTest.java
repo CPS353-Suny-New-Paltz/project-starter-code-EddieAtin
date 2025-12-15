@@ -62,7 +62,7 @@ public class ComputeEngineIntegrationTest {
 		for (Integer num : readData) {
 			// This will eventually be replaced by the actual compute engine
 			// For now, we'll use the expected results to show what should be computed
-			String result = CollatzSequence(num);
+			String result = collatzSequence(num);
 			computedResults.add(num + ": " + result);
 		}
 
@@ -88,7 +88,7 @@ public class ComputeEngineIntegrationTest {
 	}
 
 	// Helper method to compute the Collatz sequence (for validation purposes)
-	private String CollatzSequence(int n) {
+	private String collatzSequence(int n) {
 		StringBuilder sequence = new StringBuilder();
 		List<Integer> steps = new ArrayList<>();
 
