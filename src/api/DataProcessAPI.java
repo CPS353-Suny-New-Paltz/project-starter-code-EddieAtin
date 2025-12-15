@@ -6,10 +6,10 @@ import project.annotations.ProcessAPI;
 @ProcessAPI
 public interface DataProcessAPI {
 
+	
+	WriteOutput sendData(DataCheck data);
 
-	ReadInput input(ArrayList<Integer> sendList);
-
-	WriteOutput sendData(ArrayList<Integer> dataOut);
+	ReadResponse input(ReadRequest request);
 
 }
 

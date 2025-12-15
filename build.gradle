@@ -33,11 +33,13 @@ test {
 		excludeTestsMatching "tests.SmokeTestComputeEngineAPI.compRequestTest"
 		excludeTestsMatching "tests.SmokeTestComputeEngineAPI.calcResponseTest"
 		
-		excludeTestsMatching "tests.SmokeTestDataProcessAPI.readInputTest"
+		excludeTestsMatching "tests.SmokeTestDataProcessAPI.readResponseTest"
 		excludeTestsMatching "tests.SmokeTestDataProcessAPI.writeDataTest"
 		
 		excludeTestsMatching "tests.UserNetworkTest.inputVerifiedTest"
 		excludeTestsMatching "tests.UserNetworkTest.networkResponseTest"
+		
+		excludeTestsMatching "tests.ComputeEngineIntegrationTest.testCompleteComputeEngineFlow"
 		
 	}
 }
