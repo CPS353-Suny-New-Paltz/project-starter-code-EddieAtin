@@ -7,16 +7,18 @@ public class ProcessAPIProto{
 	@ProcessAPIPrototype
 	public void processAPI(DataProcessAPI process){
 		// take in the input
-		ReadInput readInput = process.input(new ArrayList<Integer>());
+		
+		ReadRequest readRequest = new ReadRequest();
+		ReadResponse readResponse = process.input(readRequest);
 
 		//After comparing new input with Data Storage, 
 		//check if it exists in the data bank
-		DataCheck dataCheck = readInput.compare();
+		DataCheck dataCheck = readResponse.compare();
 
 		//Based off dataCheck, sendData from process will locate the list from
 		//the storage system. If it didn't exist in data bank, if will, sendData will
 		//send a List with just the output.
-		WriteOutput writeOutput = process.sendData(dataCheck.sendList());
+		WriteOutput writeOutput = process.sendData(dataCheck.getData());
 
 		/* Most Simple API
 		// take in the input

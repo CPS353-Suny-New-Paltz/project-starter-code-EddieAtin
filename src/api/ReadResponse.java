@@ -1,6 +1,6 @@
 package api;
 
-public class ReadInput {
+public class ReadResponse {
 		
 		public DataCheck compare() {
 			// TODO Auto-generated method stub

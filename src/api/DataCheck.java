@@ -8,9 +8,9 @@ public class DataCheck {
 			return false;
 		}
 
-		public ArrayList sendList() {
+
+		public DataCheck getData() {
 			// TODO Auto-generated method stub
-			ArrayList<Integer> list =  new ArrayList<Integer>();
-			return list;
+			return null;
 		}
 }

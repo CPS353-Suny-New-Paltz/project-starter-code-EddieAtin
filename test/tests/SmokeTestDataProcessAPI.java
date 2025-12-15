@@ -1,33 +1,32 @@
 package tests;
 
-import api.DataCheck;
-import api.ReadInput;
-import api.WriteOutput;
-import implementations.DataProcessImpl;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import api.DataCheck;
+import api.ReadRequest;
+import api.ReadResponse;
+import api.WriteOutput;
+import implementations.DataProcessImpl;
 
 
 public class SmokeTestDataProcessAPI {
 
-	private static final ArrayList<Integer> NUM = (ArrayList<Integer>) Arrays.asList(1, 10, 25); 
-	
 
 	@Test
-	public void readInputTest() {
+	public void readResponseTest() {
 		DataProcessImpl api = new DataProcessImpl();
-
-
+		
 		// Takes in the file and integers
-		ReadInput input = api.input(NUM);
+		ReadResponse input = api.input(Mockito.mock(ReadRequest.class));
 
 		// Assert
-		assertNotNull(input, "1,10, 25");
+		assertNotNull(input, "the input is good");
 
 	}
 
@@ -37,7 +36,7 @@ public class SmokeTestDataProcessAPI {
 		DataProcessImpl api = new DataProcessImpl();
 		DataCheck dataCheck = Mockito.mock(DataCheck.class);
 
-		WriteOutput data = api.sendData(dataCheck.sendList());
+		WriteOutput data = api.sendData(dataCheck.getData());
 
 		assertNotNull(data, "The Right Output");	
 	}

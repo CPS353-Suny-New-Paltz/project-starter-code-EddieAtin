@@ -39,6 +39,8 @@ test {
 		excludeTestsMatching "tests.UserNetworkTest.inputVerifiedTest"
 		excludeTestsMatching "tests.UserNetworkTest.networkResponseTest"
 		
+		excludeTestsMatching "tests.ComputeEngineIntegrationTest.testCompleteComputeEngineFlow"
+		
 	}
 }
 

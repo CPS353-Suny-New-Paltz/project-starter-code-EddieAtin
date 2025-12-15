@@ -1,20 +1,20 @@
 package implementations;
 
-import java.util.ArrayList;
-
+import api.DataCheck;
 import api.DataProcessAPI;
-import api.ReadInput;
+import api.ReadRequest;
+import api.ReadResponse;
 import api.WriteOutput;
 
 public class DataProcessImpl implements DataProcessAPI{
 	
 	@Override
-	public ReadInput input(ArrayList<Integer> sendList) {
+	public ReadResponse input(ReadRequest request) {
 		return null;
 	}
 	
 	@Override
-	public WriteOutput sendData(ArrayList<Integer> dataOut) {
+	public WriteOutput sendData(DataCheck data) {
 		return null;
 	}
 }
