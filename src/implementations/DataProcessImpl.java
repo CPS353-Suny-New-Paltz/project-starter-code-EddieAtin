@@ -1,7 +1,5 @@
 package implementations;
 
-import java.util.ArrayList;
-
 import api.DataCheck;
 import api.DataProcessAPI;
 import api.ReadRequest;
