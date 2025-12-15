@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import project.annotations.ProcessAPIPrototype;
 
 public class ProcessAPIProto{
-	@ProcessAPIPrototype
-	public void processAPI(DataProcessAPI process){
+	//@ProcessAPIPrototype
+	//public void processAPI(DataProcessAPI process){
 		// take in the input
 		
-		ReadRequest readRequest = new ReadRequest();
-		ReadResponse readResponse = process.input(readRequest);
+		//ReadRequest readRequest = new ReadRequest();
+	//	ReadResponse readResponse = process.input(readRequest);
 
 		//After comparing new input with Data Storage, 
 		//check if it exists in the data bank
-		DataCheck dataCheck = readResponse.compare();
+		//DataCheck dataCheck = readResponse.compare();
 
 		//Based off dataCheck, sendData from process will locate the list from
 		//the storage system. If it didn't exist in data bank, if will, sendData will
 		//send a List with just the output.
-		WriteOutput writeOutput = process.sendData(dataCheck.getData());
+	//	WriteOutput writeOutput = process.sendData(dataCheck.getData());
 
 		/* Most Simple API
 		// take in the input
@@ -34,5 +34,5 @@ public class ProcessAPIProto{
 		WriteOutput writeOutput = process.sendData(new WriteOutput());
 
 		 */
-	}
+	//}
 }
