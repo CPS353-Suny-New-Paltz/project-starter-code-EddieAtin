@@ -2,7 +2,6 @@ package tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,37 +9,37 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import api.CalcWriteResponse;
-import api.CompRequest;
-import api.CompResponse;
 import api.ComputerAPI;
 import api.DataProcessAPI;
-import api.ReadRequest;
-import api.ReadResponse;
+import api.UserNetwork;
 import implementations.ComputeEngineImpl;
 import implementations.DataProcessImpl;
+import implementations.UserNetworkImpl;
 
 public class ComputeEngineIntegrationTest {
+
 	@Test
 	public void testCompleteComputeEngineFlow() {
 		// 1. Setup test data store with input and output configs
-		List<Integer> inputData = Arrays.asList(1, 10, 25); // Initial input: [1,10,25]
+		List<Integer> inputData = Arrays.asList(1, 10, 25);
 		List<String> outputDestination = new ArrayList<>();
 
-		InMemoryInputConfig inputConfig = new InMemoryInputConfig("collatz-input", inputData);
-		InMemoryOutputConfig outputConfig = new InMemoryOutputConfig("collatz-output", outputDestination);
-		InMemoryDataStore dataStore = new InMemoryDataStore(inputConfig, outputConfig);
+		InMemoryInputConfig inputConfig = new InMemoryInputConfig("collatz input: ", inputData);
+		InMemoryOutputConfig outputConfig = new InMemoryOutputConfig("collatz output: ", outputDestination);
 
+		// Use the test implementation (InMemoryDataStore) for ProcessAPI
+		InMemoryDataStore dataStore = new InMemoryDataStore(inputConfig, outputConfig);
 		// Not mocked APIs
 		DataProcessAPI dataProcess = new DataProcessImpl();
 		ComputerAPI computeEngine = new ComputeEngineImpl();
+		UserNetwork networkApi = new UserNetworkImpl();
 
-		
+
 		//Simulate the complete flow
 
 		// Phase 1: Data Processing - Read input
 		// Directly use the data store since implementations are empty
-		List<Integer> readData = dataStore.read("collatz-input");
+		List<Integer> readData = dataStore.read("collatz inpu: t");
 
 		// Verify data was read correctly
 		assertNotNull(readData, "Should read data from data store");
@@ -63,7 +62,7 @@ public class ComputeEngineIntegrationTest {
 		for (Integer num : readData) {
 			// This will eventually be replaced by the actual compute engine
 			// For now, we'll use the expected results to show what should be computed
-			String result = simulateCollatzSequence(num);
+			String result = CollatzSequence(num);
 			computedResults.add(num + ": " + result);
 		}
 
@@ -88,8 +87,8 @@ public class ComputeEngineIntegrationTest {
 
 	}
 
-	// Helper method to simulate Collatz sequence (for validation purposes)
-	private String simulateCollatzSequence(int n) {
+	// Helper method to compute the Collatz sequence (for validation purposes)
+	private String CollatzSequence(int n) {
 		StringBuilder sequence = new StringBuilder();
 		List<Integer> steps = new ArrayList<>();
 
