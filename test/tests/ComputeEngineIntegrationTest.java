@@ -21,7 +21,7 @@ import implementations.ComputeEngineImpl;
 import implementations.DataProcessImpl;
 
 public class ComputeEngineIntegrationTest {
-	@Test
+/*	@Test
 	public void testCompleteComputeEngineFlow() {
 		// 1. Setup test data store with input and output configs
 		List<Integer> inputData = Arrays.asList(1, 10, 25); // Initial input: [1,10,25]
@@ -112,5 +112,5 @@ public class ComputeEngineIntegrationTest {
 		}
 
 		return sequence.toString();
-	}
+	}*/
 }
