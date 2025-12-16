@@ -13,4 +13,6 @@ public interface ComputerAPI {
 
 	CompRequest request(int x);
 
+	CompRequest request(CompRequest compRequest);
+
 }
