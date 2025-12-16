@@ -54,16 +54,21 @@ public class ComputeEngineImpl implements ComputerAPI {
 
 		//perform calculation until x == 1 (complete computation) 
 		while(x != 1) {
+			
 			//check if x is even
 			if(x % 2 == 0) {
+				
 				//collatz sequence requires even integers to be divided by 2
 				x = x/2;
 				result.add(x);
 				//check if odd
+				
 			} else if(x % 2 == 1 ) { 
+				
 				//collatz sequence requires odd integers to be multiplied by 3 and add 1
 				x = (x * 3) + 1;
 				result.add(x);
+				
 			}
 		}
 
@@ -71,10 +76,13 @@ public class ComputeEngineImpl implements ComputerAPI {
 	}
 	
 	public String collatzToString(int initialNum) {
+		
         // Gets the sequence as a list of integers
             List<Integer> seq = collatzSequence(initialNum);
+            
             // Builds the string
         StringBuilder sb = new StringBuilder(seq.size() * 2);
+        
         // For loop to append each number and commas together
         for (int i = 0; i < seq.size(); i++) {
             if (i > 0) {
