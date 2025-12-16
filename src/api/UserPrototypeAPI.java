@@ -6,7 +6,7 @@ public class UserPrototypeAPI {
 	public void userPrototypeAPI(UserNetwork network) {
 		
 		//User input is requested
-		UserInput input = network.request(new UserInput());
+		UserInput input = network.request(new UserInput(null, null));
 		
 		// The user input works with the program a
 		InputVerified verify = network.check(input);

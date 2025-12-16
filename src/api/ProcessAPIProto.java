@@ -8,7 +8,7 @@ public class ProcessAPIProto{
 	public void processAPI(DataProcessAPI process){
 		// take in the input
 		
-		ReadRequest readRequest = new ReadRequest();
+		ReadRequest readRequest = new ReadRequest(null, null);
 		ReadResponse readResponse = process.input(readRequest);
 
 		//After comparing new input with Data Storage, 
