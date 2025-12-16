@@ -7,7 +7,7 @@ public class ComputeEnginePrototypeAPI {
 	public void computeEnginePrototype(ComputerAPI components) {
 		
 		// read component requests Collatz sequence of input to be calculated
-		CompRequest compRequest = components.request(new CompRequest());
+		CompRequest compRequest = components.request(new CompRequest(null, null));
 		
 		//Computing component will return back the output to the reader/writer component
 		CompResponse compResponse = components.response(compRequest);
