@@ -46,7 +46,7 @@ public class ComputeEngineImpl implements ComputerAPI {
 	    return new CalcWriteResponse(sb.toString());
 	}
 	
-	private List<Integer> collatzSequence(int x){
+	public List<Integer> collatzSequence(int x){
 		List<Integer> result = new ArrayList<>();
 
 		//add initial value to sequence
