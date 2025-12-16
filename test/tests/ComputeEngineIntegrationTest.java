@@ -64,7 +64,7 @@ public class ComputeEngineIntegrationTest {
 
         // 4. Phase 2: Use ComputerAPI (ConceptualAPI) to process the data
         CompRequest compRequest = new CompRequest(networkResult.getData(), "process");
-        CompRequest processedRequest = computerAPI.request(compRequest);
+        CompRequest processedRequest = computerAPI.request(compRequest.getComputeInt());
         assertNotNull(processedRequest, "ComputerAPI should process request");
         
         CompResponse compResponse = computerAPI.response(processedRequest);
